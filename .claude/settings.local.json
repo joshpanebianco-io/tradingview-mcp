@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__tradingview__quote_get",
+      "mcp__tradingview__capture_screenshot",
+      "mcp__tradingview__data_get_pine_lines"
+    ]
+  }
+}
