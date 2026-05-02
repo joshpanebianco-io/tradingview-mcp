@@ -3,7 +3,16 @@
     "allow": [
       "mcp__tradingview__quote_get",
       "mcp__tradingview__capture_screenshot",
-      "mcp__tradingview__data_get_pine_lines"
+      "mcp__tradingview__data_get_pine_lines",
+      "mcp__tradingview__data_get_study_values",
+      "mcp__tradingview__data_get_ohlcv",
+      "mcp__tradingview__chart_set_symbol",
+      "mcp__tradingview__chart_set_timeframe",
+      "mcp__tradingview__chart_get_state",
+      "mcp__tradingview__data_get_pine_labels",
+      "mcp__tradingview__data_get_pine_boxes",
+      "WebSearch",
+      "mcp__tradingview__pine_list_scripts"
     ]
   }
 }
