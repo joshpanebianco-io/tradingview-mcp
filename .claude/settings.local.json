@@ -34,7 +34,20 @@
       "Bash(Select-Object -First 30)",
       "Bash(curl *)",
       "Bash(dir \"C:\\\\Users\\\\61411\\\\Desktop\\\\Trading.ai\\\\server\" /B)",
-      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('avgDuration' in d.get\\('summary', {}\\)\\)\")"
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('avgDuration' in d.get\\('summary', {}\\)\\)\")",
+      "Bash(dir *)",
+      "PowerShell(Get-ChildItem -Recurse \"C:\\\\Users\\\\61411\\\\Desktop\\\\Trading.ai\\\\client\\\\src\" | Where-Object { !$_.PSIsContainer } | Select-Object FullName)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\61411\\\\Desktop\\\\Trading.ai\\\\server\" -Force | Where-Object { $_.Name -ne \"node_modules\" } | Select-Object Name, PSIsContainer)",
+      "Bash(Get-ChildItem -Recurse \"C:\\\\Users\\\\61411\\\\Desktop\\\\Trading.ai\" -File)",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)",
+      "PowerShell(Get-Content *)",
+      "PowerShell(Get-Process *)",
+      "PowerShell(Test-Path \"C:\\\\Users\\\\61411\\\\Desktop\\\\Trading.ai\\\\trading.db\"; if \\(Test-Path \"C:\\\\Users\\\\61411\\\\Desktop\\\\Trading.ai\\\\trading.db\"\\) { \\(Get-Item \"C:\\\\Users\\\\61411\\\\Desktop\\\\Trading.ai\\\\trading.db\"\\).Length })",
+      "Bash(node -e \"const fs=require\\('fs'\\); const installed=Object.keys\\(JSON.parse\\(fs.readFileSync\\('node_modules/.package-lock.json','utf8'\\)\\).packages\\).filter\\(k=>k&&k.startsWith\\('node_modules/'\\)\\).map\\(k=>k.replace\\('node_modules/',''\\)\\); const pkg=JSON.parse\\(fs.readFileSync\\('package.json','utf8'\\)\\); const missing=[...Object.keys\\(pkg.dependencies||{}\\), ...Object.keys\\(pkg.devDependencies||{}\\)].filter\\(d=>!installed.includes\\(d\\)\\); console.log\\('Missing:', missing.join\\(', '\\)||'none'\\)\")",
+      "Bash(npx vite *)",
+      "Bash(node *)"
     ]
   }
 }
